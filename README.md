@@ -1,4 +1,4 @@
-<h1 align="center">649_lottery </h1>
+<h1 align="center">649_Lottery </h1>
 
 ## Contents
 
