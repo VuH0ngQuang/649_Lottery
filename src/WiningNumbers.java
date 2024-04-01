@@ -9,7 +9,7 @@ public class WiningNumbers {
             numbers[i] = rand.nextInt(50);
     }
     //return winning number
-    public int getNumber(int i) {
+    public int getNumbers(int i) {
         return numbers[i];
     }
 }

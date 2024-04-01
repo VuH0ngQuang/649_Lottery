@@ -1,5 +1,4 @@
 public class JackpotCheck {
-    private int matchedNumbers;
     private WiningNumbers winingNumbers;
     private UserNumbers userNumbers;
     public JackpotCheck(WiningNumbers winingNumbers, UserNumbers userNumbers) {
@@ -7,19 +6,20 @@ public class JackpotCheck {
         this.userNumbers = userNumbers;
     }
     //check the user number and wining number are the same or not
-    private void isMatched(){
-        matchedNumbers = 0; 
+    private int isMatched(){
+        int matchedNumbers = 0;
         for (int i = 0; i < 6; i++){
             for (int j = 0; j < 6; j++){
-                if (winingNumbers.getNumber(i) == userNumbers.getNumbers(j))
+                if (winingNumbers.getNumbers(i) == userNumbers.getNumbers(j))
                     matchedNumbers++;
             }
         }
+        return matchedNumbers;
     }
     //return the quantity of matched numbers
     public int isWonOrJackpot() {
         isMatched();
-        return switch (matchedNumbers) {
+        return switch (isMatched()) {
             case 1, 2, 3, 4, 5 -> 1; // return 1 is Won
             case 6 -> 2; // return 2 is jackpot
             default -> 0; // return 0 is lost
@@ -27,7 +27,7 @@ public class JackpotCheck {
     }
     //return the prize base on matched numbers
     public int getPrize(){
-        return switch (matchedNumbers){
+        return switch (isMatched()){
             case 1, 2 -> 10;
             case 3 -> 100;
             case 4 -> 1000;
@@ -37,5 +37,5 @@ public class JackpotCheck {
         };
     }
     //return matched number
-    public int getMatchedNumbers(){ return matchedNumbers; }
+    public int getMatchedNumbers(){ return isMatched(); }
 }
