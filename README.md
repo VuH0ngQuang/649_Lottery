@@ -20,9 +20,12 @@ git clone https://github.com/VuH0ngQuang/649_Lottery
 ```bash
 cd src
 ```
-- Run the program
+- Compile the program
 ```bash
 javac *.java
+```
+- Run the program
+```bash
 java Main
 ```
 - Follow the prompt in the terminal
