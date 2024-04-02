@@ -9,26 +9,26 @@
 
 ## Brief description
 
-- This is a simple Java program allows user to buy lottery tickets with six numbers can input manually (for 1 ticket only) or randomly, and determine if user has won prize based on the matching numbers.
+1. This is a simple Java program allows user to buy lottery tickets with six numbers can input manually (for 1 ticket only) or randomly, and determine if user has won prize based on the matching numbers.
 
 ## Usage
--  Clone this repository to your machine
+2.  Clone this repository to your machine
 ```bash
 git clone https://github.com/VuH0ngQuang/649_Lottery
 ```
-- Navigate to **src** directory
+3. Navigate to **src** directory in **649_Lottery**
 ```bash
-cd src
+cd 649_Lottery/src
 ```
-- Compile the program
+4. Compile the program
 ```bash
 javac *.java
 ```
-- Run the program
+5. Run the program
 ```bash
 java Main
 ```
-- Follow the prompt in the terminal
+6. Follow the prompt in the terminal
 ## Language
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
