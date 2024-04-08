@@ -5,7 +5,7 @@
 - [Brief description](#brief-description)
 - [Usage](#Usage)
 - [Language](#language)
-- [Bonus Feature](#Bonus-feature)
+- [Project details](#Project-details)
 
 ## Brief description
 

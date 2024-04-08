@@ -1,6 +1,6 @@
 public class JackpotCheck {
-    private WiningNumbers winingNumbers;
-    private UserNumbers userNumbers;
+    private final WiningNumbers winingNumbers;
+    private final UserNumbers userNumbers;
     public JackpotCheck(WiningNumbers winingNumbers, UserNumbers userNumbers) {
         this.winingNumbers = winingNumbers;
         this.userNumbers = userNumbers;
