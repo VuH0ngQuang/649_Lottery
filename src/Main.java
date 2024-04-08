@@ -9,7 +9,7 @@ public class Main {
             System.out.print("How many tickets do you want to buy: ");
             int numberLoop = scanner.nextInt();
             loop.isLoop(numberLoop);
-            System.out.println("The number of ticket won any money: "+loop.getTotalWon());
+            System.out.println("The number of ticket won any number: "+loop.getTotalWon());
             System.out.println("The number of ticket won all 6 numbers: "+loop.getTotalJackpot());
             System.out.println("Total money won: $"+loop.getTotalPrize());
             System.out.println("Total ticket cost: $"+(numberLoop*4));

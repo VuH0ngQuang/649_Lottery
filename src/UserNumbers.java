@@ -14,7 +14,7 @@ public class UserNumbers {
         switch (userOptions){
             case 1:// create randomly
                 for (int i = 0; i < 6; i++)
-                    numbers[i] = rand.nextInt(50);
+                    numbers[i] = rand.nextInt(49 - 1 + 1) +1;
                 break;
             case 2://user input manually
                 for (int i = 0; i < 6; i++){
